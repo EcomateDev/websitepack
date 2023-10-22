@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Стилі для розділів */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Стилі для форми зв'язку */
+form {
+    margin: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Стилі для бічної панелі */
+aside {
+    float: right;
+    width: 30%;
+    padding: 20px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: disc inside;
+}
+
+/* Стилі для блоку цитати */
+.quote {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-left: 5px solid #333;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+cite {
+    font-weight: bold;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer's Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Developer's Page</h1>
+        <p>Explore my work and skills</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a web developer with a passion for coding and problem-solving.</p>
+    </section>
+    <section id="portfolio">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1: Website Development</h3>
+            <p>Created a responsive website using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Mobile App</h3>
+            <p>Developed a cross-platform mobile app using React Native.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <aside>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </aside>
+    <div class="quote">
+        <blockquote>
+            <p>"Code is poetry."</p>
+            <cite>—Unknown</cite>
+        </blockquote>
+    </div>
+    <footer>
+        <p>&copy; 2023 Developer's Page</p>
+    </footer>
+    <h1>Welcome to the Interactive Website</h1>
+    <button id="changeColorButton">Change Background Color</button>
+
+    <script>
+        // JavaScript-код для взаємодії з сайтом
+        const button = document.getElementById("changeColorButton");
+        const colors = ["#ff0000", "#00ff00", "#0000ff"];
+        let currentColorIndex = 0;
+
+        button.addEventListener("click", function() {
+            document.body.style.backgroundColor = colors[currentColorIndex];
+            currentColorIndex = (currentColorIndex + 1) % colors.length;
+        });
+    </script>
+</head>
+</body>
